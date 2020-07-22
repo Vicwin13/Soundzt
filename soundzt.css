@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+#front-page {
+    background: url(soundzt-images/background1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+img{
+    margin-top: 10px;
+}
+
+.navigation{
+    display:  flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+ul{
+    margin-right: 0;
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+   
+
+}
+ul , li{
+    list-style: none;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    padding-right: 20px;
+
+}
+
+
+li:hover{
+    border-bottom: 4px solid  rgb(139, 22, 22);
+    transform: translateX(1);
+      
+}
+
+.logo2{
+    text-align: center;
+    margin-top: 6rem;
+}
+h1{
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+.motto{
+    font-weight: bolder;
+}
+
+.download{
+    margin-top: 3rem;
+    padding: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+    background-color: rgb(139, 22, 22);
+}
