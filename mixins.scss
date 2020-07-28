@@ -1,0 +1,24 @@
+@mixin selling{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0;
+    
+    .set{
+        text-align: center;
+        margin-top: 20px; 
+        flex-flow: wrap;
+        font-size: 1.4rem;
+        width: fit-content;
+    }
+    .icon{
+        font-size: 73px;
+        border: 2px solid $maincolour;
+        padding: 30px;
+        border-radius: 50%;
+        color: $maincolour;
+        opacity: .9;
+       
+    }
+    
+}
