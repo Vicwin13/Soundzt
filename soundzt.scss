@@ -15,6 +15,15 @@ body {
   padding: 0;
  
 }
+.sound_logo{
+  height: 65px;
+  width:  65px;
+}
+
+.logo-text{
+  
+  margin-top: -70px;
+}
 
 #front-page {
   background: url(soundzt-images/background1.jpg);
@@ -36,6 +45,8 @@ h1 {
 
 .motto {
   font-weight: bolder;
+  margin-top: 0;
+
 }
 
 .download {
@@ -48,17 +59,79 @@ h1 {
   background-color: #8b1616;
 }
 
+.subscribe{
+  line-height: 5px;
+  margin-top: 60px;
+  p:nth-child(1){
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 23px;
+    color: honeydew;
+    // font-weight: bolder;
+  }
+  input{
+    padding: 10px;
+  
+  }
+  .sub_box{
+    width: 300px;
+    background-color:blanchedalmond;
+    border: none;
+    color: black;
+  }
+  .sub2{
+    background-color: $maincolour;
+    opacity: .8;
+    color: honeydew;
+    border: none;
+    letter-spacing: .6px;
+  }
+
+  
+}
+
+.footer{
+  display: grid;
+  text-transform: capitalize;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  background-color: $maincolour;
+  color: white;
+  box-shadow: 0px 0px 2px .2px black;
+ div{
+   margin: 0px 0px 10px 0px;
+ }
+ hr{
+   width: 400%;
+   outline-color: chartreuse;
+ }
+ p{
+   font-weight: bold;
+ }
+  
+ 
+}
+
+
+
 .sell{
     @include selling;
 }
 .second{
     text-align: center;
+    height: 80vh;
+    margin-top: 70px;
     h2{
         font-size: 2.45rem;
+        margin: 10px 10px 0px 1px;
     }
     hr{
     width: 5rem;
     margin-bottom: 2rem;
   
 }
+}
+
+.third{
+  @include pictures;
 }

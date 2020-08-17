@@ -1,4 +1,4 @@
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   .toggle {
     display: flex;
   }
@@ -25,7 +25,9 @@
     width: 100%;
     margin-right: 0;
   }
-
+ .sound_logo{
+   margin-left: 50px;
+ }
   ul {
     width: 100%;
     flex-direction: column;
@@ -44,4 +46,6 @@
   .navbar-links.active {
     display: flex;
   }
+
+ 
 }

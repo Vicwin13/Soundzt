@@ -1,24 +1,77 @@
 @mixin selling{
     display: flex;
+    flex-basis: .8;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
     margin: 0;
+    margin-bottom: 60px;
     
     .set{
         text-align: center;
-        margin-top: 20px; 
-        flex-flow: wrap;
-        font-size: 1.4rem;
-        width: fit-content;
+        margin-top: 15px;
+        font-size: 1rem;
+        width: 9rem;
+        
     }
     .icon{
         font-size: 73px;
-        border: 2px solid $maincolour;
-        padding: 30px;
+        border: .3px solid $maincolour;
+        padding: 20px 0px 20px 0px;
         border-radius: 50%;
         color: $maincolour;
         opacity: .9;
        
     }
     
+}
+
+@mixin pictures{
+ display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+    text-align: center;
+
+   
+    div{
+        position: relative;
+    }
+    img{
+        width: 20rem;
+        box-shadow: 0px 0px 6px 2px rgba(0, 0, 0,.5);
+        background-size: cover;
+    }
+    p{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        right: 0%;
+        color: white;
+        font-size: 1.12rem;
+        font-weight: bolder;
+        
+    
+    }
+    
+  
+}
+div.adss{
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+    width: max-content;
+    margin-left: 10px;
+
+.ads{
+        color: yellow;
+         width: 100%;
+        display: inline-block;
+        font-size: 2rem;
+        margin-left: 10px;
+        margin-bottom: 0px;
+        margin-top: 0;
+        font-weight: bold;
+
+    }
+ 
 }

@@ -63,7 +63,7 @@ a.link:hover {
   /* transition: ease-in-out 1s; */
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   .toggle {
     display: flex;
   }
@@ -89,6 +89,10 @@ a.link:hover {
     align-items: flex-start;
     width: 100%;
     margin-right: 0;
+  }
+
+  .sound_logo {
+    margin-left: 50px;
   }
 
   ul {
@@ -119,6 +123,23 @@ a.link:hover {
     width: 50%;
   }
 }
+div.adss {
+  border-bottom: 2px solid red;
+  border-left: 2px solid red;
+  width: max-content;
+  margin-left: 10px;
+}
+div.adss .ads {
+  color: yellow;
+  width: 100%;
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -126,6 +147,15 @@ a.link:hover {
 body {
   margin: 0;
   padding: 0;
+}
+
+.sound_logo {
+  height: 65px;
+  width: 65px;
+}
+
+.logo-text {
+  margin-top: -70px;
 }
 
 #front-page {
@@ -148,6 +178,7 @@ h1 {
 
 .motto {
   font-weight: bolder;
+  margin-top: 0;
 }
 
 .download {
@@ -160,23 +191,72 @@ h1 {
   background-color: #8b1616;
 }
 
+.subscribe {
+  line-height: 5px;
+  margin-top: 60px;
+}
+.subscribe p:nth-child(1) {
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 23px;
+  color: honeydew;
+}
+.subscribe input {
+  padding: 10px;
+}
+.subscribe .sub_box {
+  width: 300px;
+  background-color: blanchedalmond;
+  border: none;
+  color: black;
+}
+.subscribe .sub2 {
+  background-color: #8b1616;
+  opacity: 0.8;
+  color: honeydew;
+  border: none;
+  letter-spacing: 0.6px;
+}
+
+.footer {
+  display: grid;
+  text-transform: capitalize;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  background-color: #8b1616;
+  color: white;
+  box-shadow: 0px 0px 2px 0.2px black;
+}
+.footer div {
+  margin: 0px 0px 10px 0px;
+}
+.footer hr {
+  width: 400%;
+  outline-color: chartreuse;
+}
+.footer p {
+  font-weight: bold;
+}
+
 .sell {
   display: flex;
+  flex-basis: 0.8;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
   margin: 0;
+  margin-bottom: 60px;
 }
 .sell .set {
   text-align: center;
-  margin-top: 20px;
-  flex-flow: wrap;
-  font-size: 1.4rem;
-  width: fit-content;
+  margin-top: 15px;
+  font-size: 1rem;
+  width: 9rem;
 }
 .sell .icon {
   font-size: 73px;
-  border: 2px solid #8b1616;
-  padding: 30px;
+  border: 0.3px solid #8b1616;
+  padding: 20px 0px 20px 0px;
   border-radius: 50%;
   color: #8b1616;
   opacity: 0.9;
@@ -184,11 +264,39 @@ h1 {
 
 .second {
   text-align: center;
+  height: 80vh;
+  margin-top: 70px;
 }
 .second h2 {
   font-size: 2.45rem;
+  margin: 10px 10px 0px 1px;
 }
 .second hr {
   width: 5rem;
   margin-bottom: 2rem;
+}
+
+.third {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  text-align: center;
+}
+.third div {
+  position: relative;
+}
+.third img {
+  width: 20rem;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+.third p {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  right: 0%;
+  color: white;
+  font-size: 1.12rem;
+  font-weight: bolder;
 }
